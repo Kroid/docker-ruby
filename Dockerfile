@@ -9,7 +9,7 @@ RUN curl -sL https://deb.nodesource.com/setup | bash - && apt-get install -y nod
 ## install ruby from source
 RUN mkdir -p /root
 WORKDIR /root
-RUN wget https://ftp.ruby-lang.org/pub/ruby/stable/ruby-2.1.3.tar.gz
+RUN wget http://ftp.ruby-lang.org/pub/ruby/stable/ruby-2.1.3.tar.gz
 RUN tar xvfz ruby-2.1.3.tar.gz
 WORKDIR /root/ruby-2.1.3
 RUN ./configure
