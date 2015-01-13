@@ -27,4 +27,5 @@ RUN rm /root/ruby-2.1.3.tar.gz
 # update gems
 RUN gem update --system
 RUN gem install bundler
-
+RUN gem install pg -v 1.7.1
+RUN gem install rails -v 4.2.0
